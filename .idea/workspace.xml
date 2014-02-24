@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="986408b4-e436-4283-8593-1f4aff89ad0e" name="Default" comment="">
+    <list default="true" id="986408b4-e436-4283-8593-1f4aff89ad0e" name="Default" comment="needs some bugfixes">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lab4n2.java" afterPath="$PROJECT_DIR$/src/lab4n2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="lab4n2.iws" />
@@ -72,11 +70,8 @@
       <file leaf-file-name="lab4n2.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/lab4n2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="17" selection-start="2572" selection-end="2572" vertical-scroll-proportion="0.58388156" vertical-offset="525" max-vertical-offset="1210">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="32" column="35" selection-start="1426" selection-end="1426" vertical-scroll-proportion="0.6650602" vertical-offset="0" max-vertical-offset="1284">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -104,6 +99,22 @@
     <option name="y" value="22" />
     <option name="width" value="1348" />
     <option name="height" value="722" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Abstraction issues</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -145,7 +156,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="options.lastSelected" value="appearance" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -154,7 +165,7 @@
     <configuration default="false" name="lab4n2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lab4n2" />
       <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="5 10" />
+      <option name="PROGRAM_PARAMETERS" value="2 5" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
@@ -329,6 +340,7 @@
     <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
     <option name="FORCE_UPDATE" value="false" />
     <option name="IGNORE_EXTERNALS" value="false" />
+    <configuration useDefault="true">$USER_HOME$/.subversion</configuration>
     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
   </component>
   <component name="TaskManager">
@@ -337,6 +349,11 @@
       <created>1392581183973</created>
       <updated>1392581183973</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial commit&#10;">
+      <created>1393168710154</created>
+      <updated>1393168710155</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -348,24 +365,25 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32896653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39968404" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328594" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5007278" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328594" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32721713" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run emulator out" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.4992722" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270142" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32568806" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32896653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -380,6 +398,9 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="Initial commit&#10;" />
+    <MESSAGE value="needs some bugfixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="needs some bugfixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -391,191 +412,162 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/lab4n2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="26" selection-start="1482" selection-end="1482" vertical-scroll-proportion="0.0" vertical-offset="99" max-vertical-offset="715">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="83" column="40" selection-start="2691" selection-end="2691" vertical-scroll-proportion="0.0" vertical-offset="616" max-vertical-offset="1572">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab4n2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="29" selection-start="2516" selection-end="2516" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="1926">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab4n2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="16" selection-start="2877" selection-end="2877" vertical-scroll-proportion="0.0" vertical-offset="578" max-vertical-offset="1320">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab4n2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="17" selection-start="2572" selection-end="2572" vertical-scroll-proportion="0.0" vertical-offset="525" max-vertical-offset="1210">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab4n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="26" selection-start="1482" selection-end="1482" vertical-scroll-proportion="0.0" vertical-offset="99" max-vertical-offset="715">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab4n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="26" selection-start="1482" selection-end="1482" vertical-scroll-proportion="0.0" vertical-offset="99" max-vertical-offset="715">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lab4n2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="26" selection-start="1482" selection-end="1482" vertical-scroll-proportion="0.0" vertical-offset="99" max-vertical-offset="715">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab4n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="35" selection-start="1706" selection-end="1706" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="912">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab4n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="51" column="20" selection-start="1962" selection-end="1962" vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="948">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab4n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="51" column="20" selection-start="1962" selection-end="1962" vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="972">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab4n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="51" column="20" selection-start="1962" selection-end="1962" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="972">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab4n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="51" column="20" selection-start="1962" selection-end="1962" vertical-scroll-proportion="0.0" vertical-offset="288" max-vertical-offset="996">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab4n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="51" column="20" selection-start="1962" selection-end="1962" vertical-scroll-proportion="0.0" vertical-offset="288" max-vertical-offset="996">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab4n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="35" selection-start="1563" selection-end="1563" vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="852">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab4n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="35" selection-start="1563" selection-end="1563" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="852">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab4n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="35" selection-start="1563" selection-end="1563" vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="852">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab4n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="53" column="17" selection-start="2154" selection-end="2154" vertical-scroll-proportion="0.0" vertical-offset="636" max-vertical-offset="852">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab4n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="64" column="59" selection-start="3502" selection-end="3502" vertical-scroll-proportion="0.0" vertical-offset="768" max-vertical-offset="1092">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab4n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="128" column="22" selection-start="5191" selection-end="5191" vertical-scroll-proportion="0.0" vertical-offset="1488" max-vertical-offset="1488">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab4n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="78" column="21" selection-start="3469" selection-end="3469" vertical-scroll-proportion="0.0" vertical-offset="936" max-vertical-offset="1428">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab4n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="41" column="106" selection-start="2046" selection-end="2046" vertical-scroll-proportion="0.0" vertical-offset="396" max-vertical-offset="1056">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab4n2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="76" column="22" selection-start="3307" selection-end="3307" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="1044">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lab4n2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="17" selection-start="2572" selection-end="2572" vertical-scroll-proportion="0.58388156" vertical-offset="525" max-vertical-offset="1210">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="32" column="35" selection-start="1426" selection-end="1426" vertical-scroll-proportion="0.6650602" vertical-offset="0" max-vertical-offset="1284">
+          <folding />
         </state>
       </provider>
     </entry>

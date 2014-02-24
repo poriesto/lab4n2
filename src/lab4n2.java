@@ -8,17 +8,15 @@
  Использовать ограничения из задания 3.
  Выводить на дисплей результаты работы каждого потока.
  */
-import java.util.Objects;
 import java.util.Random;
 
 class Char implements Runnable{
-    private static String alphabetSogl = "Б В Г Д Ж З Й К Л М Н П Р С Т Ф Х Ц Ч Ш Щ";
-    private static String alphabetGlasn = " А Е Ё И О У Ы Э Ю Я";
-    protected static String[] sogl = alphabetSogl.split(" ");
-    protected static String[] glas = alphabetGlasn.split(" ");
-    private Random rnd = new Random();
-    private String str = "";
-    private int current;
+    final private static String alphabetSogl = "Б В Г Д Ж З Й К Л М Н П Р С Т Ф Х Ц Ч Ш Щ";
+    final private static String alphabetGlasn = " А Е Ё И О У Ы Э Ю Я";
+    final private String[] sogl = alphabetSogl.split(" ");
+    final private String[] glas = alphabetGlasn.split(" ");
+    final private Random rnd = new Random();
+    final private int current;
     public Char(int c){
         this.current = c;
     }
@@ -32,7 +30,7 @@ class Char implements Runnable{
     }
 }
 class CheckChar implements Runnable{
-    private int current, last;
+    final private int current, last;
     public CheckChar(int i, int c){
         this.current = i;
         this.last = c;
@@ -43,21 +41,9 @@ class CheckChar implements Runnable{
         }
     }
 }
-class CheckWord implements Runnable{
-    private int current, last;
-    public CheckWord(int c, int l){
-        this.current = c;
-        this.last = l;
-    }
-    public void run(){
-        if(this.current == this.last){
-            System.out.print(".");
-        }
-    }
-}
 class Word implements Runnable{
-    int c;
-    private Object monitor = new Object();
+    final private int c;
+    final private Object monitor = new Object();
     public Word(int count){
         this.c = count;
     }
@@ -74,31 +60,51 @@ class Word implements Runnable{
         }
     }
 }
-class Words implements Runnable{
-    private int last, chars;
-    private Object monitor = new Object();
-
-    public Words(int l, int ch){
-        this.last = l;
-        this.chars = ch;
+class CheckWords implements Runnable{
+    final private int current, last;
+    public CheckWords(int current, int last){
+        this.current = current;
+        this.last = last;
     }
     public void run(){
-        Runnable[] words = new Word[this.last];
-        for(int i = 0; i < words.length; i++){
-            words[i] = new Word(this.chars);
-            Runnable checker = new CheckWord(i, this.last);
-            synchronized (monitor){
-                new Thread(words[i]).start();
-            }
-            synchronized (monitor){
-                new Thread(checker).start();
-            }
+        if(this.current == this.last - 1){
+            System.out.print(".");
         }
     }
 }
+class Words implements Runnable{
+    final private int count, char_count;
+    final private Word[] words;
+    final private CheckWords[] checkwords;
+    final private Object monitor = new Object();
 
-public class lab4n2{
-    public static void main(String argv[]){
+    public Words(int count, int char_count){
+        this.count = count;
+        this.char_count = char_count;
+        this.words = new Word[this.count];
+        this.checkwords = new CheckWords[this.count];
+    }
+    public void run(){
+        for(int i = 0; i < this.count; i++){
+            synchronized (this.monitor){
+                this.words[i] = new Word(char_count);
+                new Thread(this.words[i]).start();
+            }
+            synchronized (this.monitor){
+                this.checkwords[i] = new CheckWords(i, this.count);
+                new Thread(checkwords[i]).start();
+            }
+        }
     }
 
+}
+
+public class lab4n2{
+    private static void rus(int count, int chars){
+        Runnable wrds = new Words(count, chars);
+        new Thread(wrds).start();
+    }
+    public static void main(String argv[]){
+        rus(Integer.parseInt(argv[0]), Integer.parseInt(argv[1]));
+    }
 }
