@@ -22,18 +22,18 @@ class Char implements Runnable{
     }
     public void run(){
         if(current % 2 == 0){
-            System.out.print(glas[rnd.nextInt(glas.length-1)]);
+            System.out.print(glas[rnd.nextInt(glas.length-1)].toLowerCase());
         }
         else{
-            System.out.print(sogl[rnd.nextInt(sogl.length-1)]);
+            System.out.print(sogl[rnd.nextInt(sogl.length-1)].toLowerCase());
         }
     }
 }
 class CheckChar implements Runnable{
     final private int current, last;
-    public CheckChar(int i, int c){
-        this.current = i;
-        this.last = c;
+    public CheckChar(int current, int last){
+        this.current = current;
+        this.last = last;
     }
     public void run(){
         if(this.current == this.last){
@@ -42,15 +42,15 @@ class CheckChar implements Runnable{
     }
 }
 class Word implements Runnable{
-    final private int c;
+    final private int count;
     final private Object monitor = new Object();
     public Word(int count){
-        this.c = count;
+        this.count = count;
     }
     public void run(){
-        for(int i = 0; i <= this.c; i++){
+        for(int i = 0; i <= this.count; i++){
             Runnable wr = new Char(i);
-            Runnable chk = new CheckChar(i, this.c);
+            Runnable chk = new CheckChar(i, this.count);
             synchronized (this.monitor){
                 new Thread(wr).start();
             }
@@ -68,41 +68,36 @@ class CheckWords implements Runnable{
     }
     public void run(){
         if(this.current == this.last - 1){
-            System.out.print(".");
+            System.out.println("." + "\n");
         }
     }
 }
 class Words implements Runnable{
     final private int count, char_count;
-    final private Word[] words;
-    final private CheckWords[] checkwords;
     final private Object monitor = new Object();
 
     public Words(int count, int char_count){
         this.count = count;
         this.char_count = char_count;
-        this.words = new Word[this.count];
-        this.checkwords = new CheckWords[this.count];
     }
     public void run(){
         for(int i = 0; i < this.count; i++){
+            Runnable wrd = new Word(this.char_count);
+            Runnable chk = new CheckWords(i, this.char_count - 1);
             synchronized (this.monitor){
-                this.words[i] = new Word(char_count);
-                new Thread(this.words[i]).start();
+                new Thread(wrd).start();
             }
             synchronized (this.monitor){
-                this.checkwords[i] = new CheckWords(i, this.count);
-                new Thread(checkwords[i]).start();
+                new Thread(chk).start();
             }
         }
     }
-
 }
 
 public class lab4n2{
     private static void rus(int count, int chars){
-        Runnable wrds = new Words(count, chars);
-        new Thread(wrds).start();
+        Runnable words = new Words(count, chars);
+        new Thread(words).start();
     }
     public static void main(String argv[]){
         rus(Integer.parseInt(argv[0]), Integer.parseInt(argv[1]));
